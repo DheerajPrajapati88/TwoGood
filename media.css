@@ -86,5 +86,8 @@
     .page3 .child h5{
         font-size: 3vw;
     }
+    .nav svg:nth-child(2){
+        top:280%;
+    }
 
 }
