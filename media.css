@@ -1,0 +1,90 @@
+@media(max-width:425px){
+    .nav .links a{
+        display: none;
+    }
+    .nav #tg{
+        padding-top: 2vw;
+        height:20vw;
+    }
+    .nav .icons{
+        /* background-color: yellow; */
+        width: 40% !important;
+        border-radius:20px;
+    }
+    .nav .icons i{
+        font-size: 3.5vw !important;
+    }
+    .nav .icons .lines{
+        gap:0.5vw;
+    }
+    .nav .icons .lines .line1,.line2{
+        width: 20px;
+    }
+    .page1{
+        padding-top: 30vh;
+    }
+    .page1 h1{
+        padding: 1vw;
+    }
+    .video_container{
+
+        height: 40vh;
+        position: relative;
+        /* background-color: yellow; */
+        position: relative;
+        padding: 2vw;
+        overflow: hidden;
+    }
+    .video_container .play{
+       display: block;
+       scale:1;
+       opacity:1;
+       padding: 4vw 2.5vw ;
+       font-size: 2vw;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+
+    }
+    .page2{
+        flex-direction: column;
+        gap: 5vw;
+    }  
+    .page2 .elm{
+        width: 80%;
+
+    }
+    .elm .dets{
+        width: 30vw;
+        height: 8vw;
+    }
+    .elm .dets i{
+        font-size: 4vw;
+    }
+    .elm .dets h3{
+        font-size: 3.5vw;
+    }
+    .elm .dets .circle{
+        width: 2vw;
+        height: 2vw;
+    }
+    .page3{
+        width: 100%;
+        min-height: 80vh;
+        display: flex;
+        padding:2vw;
+        align-items: center;
+        justify-content:center;
+         flex-wrap: wrap;
+         gap: 3vw;
+      
+    }
+    .page3 .child{
+       height: 40vh;
+       
+    }
+    .page3 .child h5{
+        font-size: 3vw;
+    }
+
+}

@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #00000013;
+}
+.cursor{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: fixed;
+    /* z-index: 9999; */
+    transform: translate(-50%,-50%) scale(0);
+    transition: all 0.1s linear;
+    background-color: rgba(178, 34, 34, 0.516);
+}
+*::selection{
+    color: #fff;
+    background-color: #000;
+}
+.nav{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    padding: 1vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+.nav .nav2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    justify-content: space-between;
+}
+.nav .svg{
+    height: 90px;
+    position: relative;
+    overflow: hidden;
+}
+.nav svg:nth-child(2){
+    display: block;
+    position: absolute;
+    top:250%;
+}
+.nav .nav2 .links{
+    width: 70%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    
+}
+.nav .nav2 .links a{
+    text-decoration: none;
+    font-size: 1.3vw;
+    color: #000;
+}
+.nav .nav2 .icons{
+    color: #000;
+    width: 20%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    border-radius: 2vw;
+}
+.nav .nav2 .icons i{
+    font-size: 1.3vw;
+    padding-right: 0.5vw;
+}
+.nav .nav2 .lines{
+    width: 40px;
+    height: 40px;
+    /* background-color: wheat; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.3vw;
+}
+.lines .line1,.line2{
+
+    width: 25px;
+    height: 1px;
+    background-color:#000;
+    border-radius:10px;
+}
+.page1{
+    padding-top: 20vw;
+    min-height: 100vh;
+    position: relative;
+    align-items: center;
+    position: relative;
+
+}
+.page1 h1{
+    
+    font-size: 14vw;
+    text-transform: uppercase;
+    font-weight:900;
+    letter-spacing: -1vw;
+    line-height: 13vw;
+    text-shadow: 0px 5px 10px #00000052;
+
+}
+
+.video_container{
+
+    height: 100vh;
+    position: relative;
+    /* background-color: yellow; */
+    position: relative;
+    padding: 2vw;
+    overflow: hidden;
+}
+.video_container video{
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    
+}
+.video_container .play{
+    text-transform: uppercase;
+    position:absolute;
+    z-index: 9;
+    display: none;
+    transform:scale(0);
+    opacity:0;
+    transition: all 0.2s linear;
+    pointer-events: none;
+    font-size: 1.5vw;
+    padding: 3vw 2vw;
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.page2{
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: firebrick; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw;
+  
+}
+.elm{
+
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.elm img{
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    scale:1.2;
+}
+.elm .dets{
+    height: 4vw;
+    width: 20vw;
+    background-color: #000;
+    position: absolute;
+    z-index: 9;
+    border-radius: 4vw;
+    /* overflow: hidden; */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.elm .dets i{
+    font-size: 2vw;
+}
+.elm .dets .circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.dropdown{
+    width: 20vw;
+    height: 0vw;
+    background-color: #fff;
+    position:absolute;
+    top: 100%;
+    border-radius: 2vw;
+    transition:all 0.4s ease;
+    display: flex;
+
+}
+.dropdown img{
+    filter: drop-shadow(0px 5px 5px #00000063);
+
+}
+
+.elm .dets:hover .dropdown{
+    height: 10vw;
+}
+.page3{
+    width: 100%;
+    min-height: 120vh;
+    display: flex;
+    padding:2vw;
+    align-items: center;
+    justify-content:center;
+     flex-wrap: wrap;
+     gap: 3vw;
+  
+}
+.page3 .child{
+    height: 55vh;
+    width: 35vw;
+    /* background-color: aqua; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+  
+}
+.page3 .child img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* box-shadow: 5px 5px 10px #000; */
+    filter: drop-shadow(20px 0px 20px #000000ab);
+}
+.page3 .child h5{
+    margin: 1vw 0;
+}
